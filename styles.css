@@ -1,0 +1,18 @@
+h1, h2 {
+    font-family: cursive;
+    color: palevioletred;
+    text-align: center;
+}
+p {
+    color: paleturquoise;
+    text-wrap: true;
+    text-align: center;
+    font-size: 36px;
+}
+body {
+    background-color: black;
+}
+li {
+    color: aliceblue;
+    font-family: cursive;
+}
