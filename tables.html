@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 2px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Tables</h1>
+
+        <h2>The Table Element</h2>
+        <p><strong>&lt;table&gt;</strong> - This is the element that creates an HTML Table. <strong>NOTE:</strong> HTML Tables are not used to organize data into rows and columns</p>
+
+        <h2>Cells</h2>
+        <p>Cells are a location in the table at a specific row and column. Cells are created at the intersection of a row and a column</p>
+
+        <h2>Table Row</h2>
+        <p><strong>&lt;tr&gt;</strong> - An element that creates a row... in a table. Table rows are nested inside of table elements.</p>
+
+        <h2>Table Header</h2>
+        <p><strong>&lt;th&gt;</strong> - The element that creates a cell containing table header information about the data contained in a specific column.</p>
+
+        <h2>Table Data</h2>
+        <p><strong>&lt;td&gt;</strong> - The element that created a table cell containing table data</p>
+
+        <h2>Table Data</h2>
+        <p><strong>&lt;td&gt;</strong> - This element defines a short decriptive text for the table.</p>
+
+        <table>
+            <caption>This is my test data table</caption>
+            <tr>
+                <th></th>
+                <th>Col Header 1</th>
+                <th>Col Header 2</th>
+                <th>Col Header 3</th>
+            </tr>
+            <tr>
+                <th>Row Header 1</th>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 2.b</td>
+            </tr>
+            <tr>
+                <th>Row Header 2</th>
+                <td>Data 3</td>
+                <td>Data 3</td>
+                <td>Data 3.b</td>
+            </tr>
+        </table>
+        <p><strong>More notes:</strong> You copuld get away without using closing in table elements, the output will be unpredictable.</p>
+
+        <h2>Accessible Tables</h2>
+        <p>Accessibility refers to the ability of your web content to be consumend by people with disabilities. Here is an example of an Accessible table:</p>
+
+        <p>In the following table, we use the scope attribute to provide accessibilirt detail. The scope attribute is commonly assigned either "col" or "row" to indicate if the table header applies to a column or row of data</p>
+        
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">Lightest</th>
+                <th scope="col">Heaviest</th>
+            </tr>
+            <tr>
+                <th scope="row">Bird</th>
+                <td>Bee Hummingbird</td>
+                <td>Ostrich</td>
+            </tr>
+            <tr>
+                <th scope="row">Mammal</th>
+                <td>Pygmy Shrew</td>
+                <td>Blue Whale</td>
+            </tr>
+        </table>
+
+        <p><strong>Colspan + Rowspan attributes</strong> - A single table cell occupies a single row and column by default, but a cell may span multiple columns or multiple rows using col/rowspan attributes to specify how many columns or rows to span.</p>
+
+        <table>
+            <caption>Team Schedule</caption>
+            <tr>
+                <th></td>
+                <th>Mon</td>
+                <th>Tue</td>
+                <th>Wed</td>
+            </tr>
+            <tr>
+                <th>9:00</th>
+                <td colspan="3">Warmup</td>
+            </tr>
+            <tr>
+                <th>10:00</th>
+                <td>Drills</td>
+                <td>Skills Test</td>
+                <td rowspan="2">Scrimmage</td>
+            </tr>
+            <tr>
+                <th>11:00</th>
+                <td>Film</td>
+                <td>Weights</td>
+            </tr>
+        </table>
+
+        <p><strong>thead Element:</strong> &lt;thead&gt; element specifies the table header</p>
+
+        <p><strong>tbody Element:</strong> &lt;tbody&gt; element specifies the table body</p>
+        
+        <p><strong>tfoot Element:</strong> &lt;tfoot&gt; element specifies the table footer</p>
+    </body>
+</html>
